@@ -1,13 +1,20 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
+import classes from './Layout.css';
 
 const layout = (props) => (
-    <Aux>
-        <div> Nav </div>
+    <div className={classes.Layout}>
+        <h1> earTrainer </h1>
+
+        <nav>
+            <a href='/'>ABOUT</a>
+            <a href='/settings'>SETTINGS</a>
+            <a href='/practice'>PRACTICE</a>
+        </nav>
+
         <main>
             {props.children}
         </main>
-    </Aux>
+    </div>
 );
 
 export default layout;

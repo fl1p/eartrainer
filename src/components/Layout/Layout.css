@@ -1,0 +1,25 @@
+.Layout {
+    width: 100%;
+    height: 100vh;
+
+    text-align: center;
+    background-color: white;
+}
+
+.Layout a{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.Layout nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Layout h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
