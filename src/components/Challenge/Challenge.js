@@ -4,7 +4,8 @@ import classes from './Challenge.css'
 const challenge = props => {
     return (
         <div className={classes.Challenge}>
-            CHALLENGE
+            <h2> Challenge {props.challenge.id} </h2>
+            <p> Playing sound:{props.challenge.content} </p>
         </div>
     )
 }
