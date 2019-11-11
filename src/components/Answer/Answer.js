@@ -1,25 +1,22 @@
+// simple UI component that takes options (intervals)
+// and a handler and shows buttons for the given options
+
 import React from 'react'
 import classes from './Answer.css'
 
-const answer = props => {
-    console.log(props)
+const answer = props => (
+    <div className={classes.Answer}>
+        <p> What is your answer? </p>
+        { props.options.map(answer => {
+                return (
+                    <button key={answer.name}
+                        onClick={() => props.answerHandler(answer.name)}>
+                        {answer.name} 
+                    </button>
+                )
+            })
+        }
+    </div>
+)
 
-    return (
-        <div className={classes.Answer}>
-            <p> What is your answer? </p>
-            { 
-                props.challenges.map(answer => {
-                    return (
-                        <button key={answer.id}
-                            onClick={() => props.answerHandler(props.challenge.id, answer.id)}>
-                            {answer.content} 
-                        </button>
-                    )
-                })
-            }
-        </div>
-    )
-
-}
-
-export default answer
+export default answer;
