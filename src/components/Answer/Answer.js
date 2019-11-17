@@ -8,14 +8,13 @@ const answer = props => (
     <div className={classes.Answer}>
         <p> What is your answer? </p>
         { props.options.map(answer => {
-                return (
-                    <button key={answer.name}
-                        onClick={() => props.answerHandler(answer.name)}>
-                        {answer.name} 
-                    </button>
-                )
-            })
-        }
+            return (
+                <button key={answer.name}
+                    onClick={() => props.answerHandler(answer.name)}>
+                    {answer.name} 
+                </button>
+            )
+        })}
     </div>
 )
 

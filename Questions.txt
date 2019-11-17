@@ -1,0 +1,26 @@
+Open Technical Questions
+
+* In Content.js, for example, where should I put the functions not related to the component?
+* Where are variables that are declared outside the component scoped to?
+Where should code like that IntervalPlayer and related functions go?
+=>  One the one hand this component is small and there is no reuse of this code in sight, so it could just stay here
+=> On the other probably more and more player functions will be coming up so a playerHelper could be an option if that
+   is good practice in React? 
+// Can timing the sound be done with start(0) stop(1)?
+
+Notes
+
+* At the moment the intervals for the exercise are specified by the intervals present in the INTERVALS constant.
+
+Todos
+
+* Create extra layer in Content component, if needed. Think about the problem and understand the solutions;
+  => Maybe content is just the switch for the About, Settings, Practice, Stats pages?
+* Think of a mechanism to dynamically set the intervals for a challenge (and prepare for other params too)
+* Should Challenge and Answer be one Component?
+* most basic user/auth => basic stats
+* finsihed exercise markup
+* repeat interval option
+* in exercise stats
+* Improve the sound with an envelope and in the future provide several optiosn incl. samples
+

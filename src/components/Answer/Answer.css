@@ -1,6 +1,6 @@
 .Answer{
     border: solid 2px black;
-
-    margin: 10px;
+    width: 70%;
+    margin: 10px auto;
     padding: 10px;
 }

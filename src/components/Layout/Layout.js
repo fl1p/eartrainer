@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Layout.css';
 
-const layout = (props) => (
+const layout = props => (
     <div className={classes.Layout}>
         <h1> earTrainer </h1>
 

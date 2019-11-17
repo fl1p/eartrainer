@@ -1,6 +1,6 @@
 .Challenge{
-    border: solid 2px black;
-
-    margin: 10px;
+    border: solid 2px #0e0e0f;
+    width: 70%;
+    margin: 10px auto;
     padding: 10px;
 }
